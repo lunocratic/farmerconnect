@@ -34,7 +34,8 @@ app.get('/', (req, res) => {
   res.json({ 
     message: '🌾 Farmify API Server',
     status: 'running',
-    version: '1.0.0'
+    version: '1.0.0',
+    timestamp: new Date().toISOString()
   });
 });
 
